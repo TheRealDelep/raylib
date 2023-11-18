@@ -106,6 +106,9 @@
 //----------------------------------------------------------------------------------
 // Some basic Defines
 //----------------------------------------------------------------------------------
+#if defined(__cplusplus)
+    namespace rl {
+#endif
 #ifndef PI
     #define PI 3.14159265358979323846f
 #endif
@@ -1657,6 +1660,7 @@ RLAPI void AttachAudioMixedProcessor(AudioCallback processor); // Attach audio s
 RLAPI void DetachAudioMixedProcessor(AudioCallback processor); // Detach audio stream processor from the entire audio pipeline
 
 #if defined(__cplusplus)
+}
 }
 #endif
 
